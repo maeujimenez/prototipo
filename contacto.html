@@ -1,5 +1,77 @@
 <html>
 
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Correo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"], input[type="email"], textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <form id="contactForm" action="send_mail.php" method="POST">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Mensaje:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <input type="submit" value="Enviar">
+        </form>
+    </div>
+
+    <script src="form_validation.js"></script>
+</body>
+</html>
+
+
+
+
+
+ <!--
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,8 +82,7 @@
     <title>SERVICIOS </title>
  </head>
     <header>
-  <!-- <img src="img/baner noasur2.png" alt="Image" class="img-fluid">
-        -->
+
         <img src="img/bnoasur.png" alt="Image" class="img-fluid">
     </header>
   
@@ -65,9 +136,8 @@
                     <div class="form-group">
                         <select class="form-control" id="contact-select" name="inquiry">
                             <option value="-">Asunto</option>
-                            <option value="sales">Sales &amp; Marketing</option>
-                            <option value="creative">Creative Design</option>
-                            <option value="uiux">UI / UX</option>
+                            <option value="sales">No existe el servicio</option>
+                            <option value="creative">Necesito ayuda</option>
                         </select>
                     </div>
                     <div class="form-group">
@@ -75,7 +145,8 @@
                     </div>
 
                     <div class="form-group tm-text-right">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                         <button type="submit" class="btn btn-primary">Enviar</button>
+
                     </div>
                 </form>                
             </div>
@@ -110,7 +181,7 @@
             </div>
             <div class="col-lg-4 col-12">
                 <h2 class="tm-text-primary mb-5">Unidades Ejecutoras</h2>
-                <!-- Map -->
+
                 <div class="mapouter mb-4">
                     <div class="gmap-canvas">
                         <iframe width="100%" height="520" id="gmap-canvas"
@@ -121,7 +192,7 @@
             </div>
         </div>
         
-    </div> <!-- container-fluid, tm-container-content -->
+    </div>
 
 <footer>
     <div class="logo-section">
@@ -143,6 +214,8 @@
 
 
 </footer>
+
 </body>
 
 </html>
+-->
